@@ -3,13 +3,13 @@
 
 @=======================================================================
 @
-@	red_bn_gfx, 256x256@8, 
-@	+ palette 32 entries, not compressed
-@	+ 2 tiles (t|f reduced) not compressed
+@	red_bn_gfx, 256x256@4, 
+@	+ palette 16 entries, not compressed
+@	+ 2 tiles (t|f|p reduced) not compressed
 @	+ regular map (flat), not compressed, 32x32 
-@	Total size: 64 + 128 + 2048 = 2240
+@	Total size: 32 + 64 + 2048 = 2144
 @
-@	Time-stamp: 2026-07-17, 15:32:10
+@	Time-stamp: 2026-07-18, 14:22:42
 @	Exported by Cearn's GBA Image Transmogrifier, v0.9.2
 @	( http://www.coranac.com/projects/#grit )
 @
@@ -17,13 +17,11 @@
 
 	.section .rodata
 	.align	2
-	.global red_bn_gfxTiles		@ 128 unsigned chars
+	.global red_bn_gfxTiles		@ 64 unsigned chars
 	.hidden red_bn_gfxTiles
 red_bn_gfxTiles:
 	.word 0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
-	.word 0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
-	.word 0x1E1E1E1E,0x1E1E1E1E,0x1E1E1E1E,0x1E1E1E1E,0x1E1E1E1E,0x1E1E1E1E,0x1E1E1E1E,0x1E1E1E1E
-	.word 0x1E1E1E1E,0x1E1E1E1E,0x1E1E1E1E,0x1E1E1E1E,0x1E1E1E1E,0x1E1E1E1E,0x1E1E1E1E,0x1E1E1E1E
+	.word 0x99999999,0x99999999,0x99999999,0x99999999,0x99999999,0x99999999,0x99999999,0x99999999
 
 	.section .rodata
 	.align	2
@@ -176,12 +174,10 @@ red_bn_gfxMap:
 
 	.section .rodata
 	.align	2
-	.global red_bn_gfxPal		@ 64 unsigned chars
+	.global red_bn_gfxPal		@ 32 unsigned chars
 	.hidden red_bn_gfxPal
 red_bn_gfxPal:
-	.hword 0x0000,0x0010,0x0200,0x0210,0x4000,0x4010,0x4200,0x6318
-	.hword 0x4210,0x001F,0x03E0,0x03FF,0x7C00,0x7C1F,0x7FE0,0x7FFF
-	.hword 0x0004,0x0007,0x000B,0x000F,0x0013,0x0017,0x001B,0x001F
-	.hword 0x0080,0x00E0,0x0160,0x01E0,0x0260,0x02E0,0x0360,0x03E0
+	.hword 0x0000,0x07FF,0x0183,0x168B,0x0E49,0x05E4,0x0121,0x1AED
+	.hword 0x0E26,0x0985,0x0A89,0x0DE5,0x00E0,0x0523,0x1289,0x0EEB
 
 @}}BLOCK(red_bn_gfx)
