@@ -31,7 +31,7 @@
 #
 # All directories are specified relative to the project directory where the makefile is found.
 #---------------------------------------------------------------------------------------------------------------------
-TARGET      	:=  $(notdir $(CURDIR))
+TARGET      	:=  HungryBall_jam
 BUILD       	:=  build
 
 # --- OS Detection ---
@@ -54,7 +54,7 @@ AUDIOBACKEND	:=  maxmod
 AUDIOTOOL		:=  
 DMGAUDIO    	:=  dmg_audio
 DMGAUDIOBACKEND	:=  default
-ROMTITLE    	:=  Eat The Ball
+ROMTITLE    	:=  HungryBall
 ROMCODE     	:=  SBTP
 USERFLAGS   	:=  
 USERCXXFLAGS	:=  
