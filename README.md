@@ -1,6 +1,6 @@
 # 🥘🟤 HUNGRY BALL
 ## Introduction 
-Hello, everyone. I am Egg, and I am here to give you a sight of my new game. I made this with handmade assets and also a little help from GBA Communities.
+Hello, everyone. I am Osc, and I am here to give you a sight of my new game. I made this with handmade assets and also a little help from GBA Communities.
 Hungry Ball is a game I made purely by the help of C++ that translates the code into a playable Gameboy Advance game. 
 Though the game is short, some update will be done in the future.. as I am now a Binus University student lmao.
 
